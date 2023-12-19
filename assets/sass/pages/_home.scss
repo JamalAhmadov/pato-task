@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100px;
+    background-color: gray !important;
+
+    .socialIcons {
+        display: flex;
+        i {
+            font-size: 20px;
+            margin: 0px 10px;
+        }
+
+    }
+
+    nav {
+        ul {
+            li {
+                a {
+                    color: white !important;
+                }
+            }
+        }
+    }
+}
+
+main {
+    #welcome {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        min-height: 100vh;
+        background-image: url(/assets/images/slide1-01.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+
+        h3 {
+            font-family: Courgette;
+            font-size: 60px;
+            line-height: 1.1;
+            color: white;
+
+        }
+
+        h1 {
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 90px;
+            line-height: 1.1;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            word-spacing: 10px;
+
+        }
+
+        button {
+            font-family: Montserrat;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.1;
+            color: #ec1d25;
+            text-transform: uppercase;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 15px;
+
+        }
+    }
+
+
+    #restaurant {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .resLeft {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            span {
+                font-family: Courgette;
+                font-size: 30px;
+                line-height: 1.2;
+                color: #d61c22;
+            }
+
+            h3 {
+                font-family: Poppins;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 1.2;
+                color: #222222;
+                text-transform: uppercase;
+                letter-spacing: 6px;
+            }
+
+            p {
+
+                font-family: Montserrat;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 1.7;
+                color: #666666;
+                max-width: 513px;
+
+            }
+
+            .resButton {
+                border: none;
+                line-height: 5px;
+
+                &:hover {
+                    color: #d61c22;
+                }
+            }
+        }
+
+        .resRight {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 80%;
+                height: 80%;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    #discover {
+        width: 100%;
+        min-height: 50vh;
+        background-image: url(/assets/images/bg-intro-01.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        span {
+            font-family: Courgette;
+            font-size: 30px;
+            line-height: 1.2;
+            color: #d61c22;
+        }
+
+        h3 {
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 1.2;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            word-spacing: 6px;
+        }
+
+    }
+
+    #render {
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 100vh;
+        background: rgb(240, 255, 210);
+
+        input {
+            width: 40%;
+            height: 40px;
+            border-radius: 10px;
+            border: 2px dotted red;
+            padding: 10px;
+        }
+
+        button {
+            border: none;
+            background-color: rgb(142, 142, 142);
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin: 20px;
+
+            &:hover {
+                color: #d61c22 !important;
+                background-color: #3e3131;
+                box-shadow: 5px #3e3131;
+            }
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center !important;
+        }
+
+        #container {
+            margin-top: 20px;
+            display: flex;
+            text-align: center;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .cart {
+                border-radius: 10px;
+                padding: 10px;
+                margin: 10px;
+                border: 1px solid blue;
+                max-width: 300px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+
+            }
+        }
+    }
+
+
+    #reservation {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #EEEEEE;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .reservBox {
+            text-align: center;
+
+            span {
+                font-family: Courgette;
+                font-size: 30px;
+                line-height: 1.2;
+                color: #d61c22;
+            }
+
+            h3 {
+                font-family: Poppins;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 1.2;
+                color: rgb(0, 0, 0);
+                text-transform: uppercase;
+                letter-spacing: 10px;
+                word-spacing: 6px;
+                font-weight: 900;
+            }
+        }
+
+
+        .resLeft {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .resButton {
+                border: none;
+                line-height: 5px;
+
+                &:hover {
+                    color: #d61c22;
+                }
+            }
+        }
+
+        .resRight {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 80%;
+                height: 80%;
+                border-radius: 10px;
+            }
+        }
+
+        .formBox {
+            display: flex;
+            gap: 30px;
+
+            input {
+                font-family: Montserrat;
+                font-weight: 400;
+                font-size: 14px;
+                color: #666666;
+                border-radius: 10px;
+                height: 50px;
+                min-width: 250px;
+                border: 2px solid rgb(192, 192, 192);
+            }
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            #bookButton {
+                background-color: #222222;
+                border: none;
+                border-radius: 10px;
+                padding: 8px 30px;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+}
+
+#bskcontainer {
+    display: flex;
+
+    .myCard {
+        text-align: center;
+        width: 300px;
+
+    }
+}
+
+
+
+@media screen and (max-width:992px) {
+    #restaurant {
+        min-height: 150vh !important;
+    }
+
+    .resRight {
+        margin-top: 20px;
+    }
+
+    .formBox {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            width: 100%;
+        }
+    }
+
+    #welcome {
+        h3 {
+            font-size: 30px !important;
+        }
+
+        h1 {
+            font-size: 45px !important;
+        }
+    }
+    #restaurant {
+        h3 {
+            font-size: 30px !important;
+        }
+
+        h1 {
+            font-size: 45px !important;
+        }
+    }
+
+}
